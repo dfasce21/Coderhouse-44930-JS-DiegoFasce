@@ -16,6 +16,8 @@ let menu
 let totalMensual = 0
 let meses
 
+console.log(FrutalesPag)
+
 /* menu principal */
 
 do
@@ -24,7 +26,7 @@ do
     switch(menu){
     case 1:
         menuProductos ()
-        total = FrutalesPag.reduce((acum, fruta) => { return acum + (fruta.precio*fruta.cantCompra)}, 0)
+        total = FrutalesPag.reduce((acum, fruta) => {return acum + (fruta.precio*fruta.cantCompra)}, 0)
         console.log(FrutalesPag)
         break
     case 2:

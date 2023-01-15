@@ -2,11 +2,14 @@
 /* class productos */
 
 class Frutal{
-    constructor (nombre, precio, cantPag, cantCompra){
+    nombre;
+    precio;
+    cantPag;
+    cantCompra;
+    constructor (nombre, precio, cantPag){
         this.nombre = nombre;
         this.precio = parseInt(precio);
         this.cantPag = parseFloat(cantPag);
-        this.cantCompra = parseFloat(cantCompra);
     }
 /* metodos */
     calcularIva () {
@@ -14,9 +17,6 @@ class Frutal{
     }
     AumentarCantCompra () {
         this.cantCompra = this.cantCompra + cant
-    }
-    LimpiarCompra () {
-        this.cantCompra = 0
     }
     RestarCantPag () {
         this.cantPag = this.cantPag - cant
