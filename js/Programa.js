@@ -5,11 +5,6 @@
 
 let productos
 let cant
-let valorP1 = Frutal1.precio
-let valorP2 = Frutal2.precio
-let valorP3 = Frutal3.precio
-let valorP4 = Frutal4.precio
-let valorP5 = Frutal5.precio
 let total = 0
 let cuotas
 let menu
