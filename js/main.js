@@ -213,7 +213,7 @@ if(productosEnCarritoLS){
     actualizarNumerito();
 }
 else{
-    const productosEnCarrito = [];
+    productosEnCarrito = [];
 }
 
 function actualizarBotonesAgregar () {

@@ -1,5 +1,4 @@
 
-
 let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito"));
 
 const contenedorCarrito = document.querySelector(".div-productos-carrito");
@@ -24,7 +23,7 @@ function cargarProductosAlCarrito() {
                 const div = document.createElement("div");
                 div.classList.add("col-12");
                 div.innerHTML = `
-                    <img src="${producto.imagen}" alt="${producto.titulo}">
+                    <img src=".${producto.imagen}" alt="${producto.titulo}">
                     <div><small>Nombre</small><p>${producto.titulo}</p></div>
                     <div><small>Cantidad</small><p>${producto.cant}</p></div>
                     <div><small>Precio</small><p>$ ${producto.precio}</p></div>
