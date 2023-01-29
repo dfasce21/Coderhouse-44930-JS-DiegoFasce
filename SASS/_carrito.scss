@@ -1,0 +1,136 @@
+
+@use './variables';
+
+.active-carrito{
+    border: none;
+    background-color: variables.$color4;
+    color: variables.$color6;
+    font-weight: bold;
+    display: flex;
+    text-decoration: none;
+    color: variables.$color5;
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    &:hover{
+        color: variables.$color6;
+        cursor: pointer;
+    }
+    .cant-carrito2{
+        background-color: variables.$color6;
+        color: variables.$color7;
+        border-radius: 4px;
+        padding: 2px;
+        padding-left: 7px;
+        padding-right: 7px;
+        margin-left: 4px;
+    }
+}
+
+.volver{
+    width: 210px;
+}
+
+.carritoVacio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: variables.$color4;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.div-productos-carrito {
+    display: flex;
+    flex-direction: column;
+    background-color: variables.$color4;
+    border-radius: 10px;
+    padding: 30px;
+    gap: 30px;
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        background-color: variables.$color7;
+        border-radius: 15px;
+        padding: 20px;
+        padding-left: 30px;
+        img{
+            width: 100px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            p{
+                padding: 0px;
+            }
+        }
+        button{
+            border: none;
+            position: relative;
+            left: 30px;
+            &:hover{
+                color: variables.$color8;
+            }
+        }
+    }
+    .disabled{
+        display: none;
+    }
+}
+
+.div-vaciar-comprar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    button{
+        border: none;
+        background-color: variables.$color4;
+        color: variables.$color6;
+        font-weight: bold;
+        display: flex;
+        text-decoration: none;
+        color: variables.$color5;
+        border-radius: 10px;
+        height: 40px;
+        width: 150px;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        &:hover{
+            color: variables.$color6;
+            cursor: pointer;
+        }
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        button{
+            font-weight: bold;
+            background-color: variables.$color6;
+            color: variables.$color7;
+            &:hover{
+                border: 3px solid variables.$color1;
+                color: variables.$color7;
+            }
+        }
+        p{
+            font-weight: bold;
+            padding-right: 10px;
+        }
+    }
+}
+
+.disabled{
+    display: none;
+}
