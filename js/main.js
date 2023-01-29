@@ -205,16 +205,7 @@ botonesCategorias.forEach(boton => {
     })
 });
 
-function actualizarBotonesAgregar () {
-    botonesAgregar = document.querySelectorAll(".producto-agregar");
-
-    botonesAgregar.forEach(boton => {
-        boton.addEventListener("click", agregarAlCarrito);
-    });
-}
-
 let productosEnCarrito;
-
 let productosEnCarritoLS = localStorage.getItem("productos-en-carrito")
 
 if(productosEnCarritoLS){
@@ -223,6 +214,14 @@ if(productosEnCarritoLS){
 }
 else{
     const productosEnCarrito = [];
+}
+
+function actualizarBotonesAgregar () {
+    botonesAgregar = document.querySelectorAll(".producto-agregar");
+
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+    });
 }
 
 function agregarAlCarrito (e) {
