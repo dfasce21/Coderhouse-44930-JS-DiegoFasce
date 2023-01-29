@@ -6,7 +6,7 @@ const productos = [
     {
         id: "Anana",
         titulo: "Ananá",
-        imagen: "../imagenes/frutas/anana.jpg",
+        imagen: "./imagenes/frutas/anana.jpg",
         categoria: {
             nombre: "frutas",
             id: "frutas",
@@ -16,7 +16,7 @@ const productos = [
     {
         id: "Cereza",
         titulo: "Cereza",
-        imagen: "../imagenes/frutas/cereza.jpg",
+        imagen: "./imagenes/frutas/cereza.jpg",
         categoria: {
             nombre: "frutas",
             id: "frutas",
@@ -26,7 +26,7 @@ const productos = [
     {
         id: "Ciruela",
         titulo: "Ciruela",
-        imagen: "../imagenes/frutas/ciruela.jpg",
+        imagen: "./imagenes/frutas/ciruela.jpg",
         categoria: {
             nombre: "frutas",
             id: "frutas",
@@ -36,7 +36,7 @@ const productos = [
     {
         id: "Durazno",
         titulo: "Durazno",
-        imagen: "../imagenes/frutas/durazno.jpg",
+        imagen: "./imagenes/frutas/durazno.jpg",
         categoria: {
             nombre: "frutas",
             id: "frutas",
@@ -46,7 +46,7 @@ const productos = [
     {
         id: "Kiwi",
         titulo: "Kiwi",
-        imagen: "../imagenes/frutas/kiwi.jpg",
+        imagen: "./imagenes/frutas/kiwi.jpg",
         categoria: {
             nombre: "frutas",
             id: "frutas",
@@ -56,7 +56,7 @@ const productos = [
     {
         id: "Limon",
         titulo: "Limon",
-        imagen: "../imagenes/frutas/limon.jpg",
+        imagen: "./imagenes/frutas/limon.jpg",
         categoria: {
             nombre: "frutas",
             id: "frutas",
@@ -66,7 +66,7 @@ const productos = [
     {
         id: "Naranja",
         titulo: "Naranja",
-        imagen: "../imagenes/frutas/naranja.jpg",
+        imagen: "./imagenes/frutas/naranja.jpg",
         categoria: {
             nombre: "frutas",
             id: "frutas",
@@ -76,7 +76,7 @@ const productos = [
     {
         id: "Sandia",
         titulo: "Sandia",
-        imagen: "../imagenes/frutas/sandia.jpg",
+        imagen: "./imagenes/frutas/sandia.jpg",
         categoria: {
             nombre: "frutas",
             id: "frutas",
@@ -87,7 +87,7 @@ const productos = [
     {
         id: "Berenjena",
         titulo: "Berenjena",
-        imagen: "../imagenes/verduras/berenjena.jpg",
+        imagen: "./imagenes/verduras/berenjena.jpg",
         categoria: {
             nombre: "verduras",
             id: "verduras",
@@ -97,7 +97,7 @@ const productos = [
     {
         id: "Choclo",
         titulo: "Choclo",
-        imagen: "../imagenes/verduras/choclo.jpg",
+        imagen: "./imagenes/verduras/choclo.jpg",
         categoria: {
             nombre: "verduras",
             id: "verduras",
@@ -107,7 +107,7 @@ const productos = [
     {
         id: "Morrones",
         titulo: "Morrones",
-        imagen: "../imagenes/verduras/morrones.jpg",
+        imagen: "./imagenes/verduras/morrones.jpg",
         categoria: {
             nombre: "verduras",
             id: "verduras",
@@ -117,7 +117,7 @@ const productos = [
     {
         id: "Papa",
         titulo: "Papa",
-        imagen: "../imagenes/verduras/papa.jpg",
+        imagen: "./imagenes/verduras/papa.jpg",
         categoria: {
             nombre: "verduras",
             id: "verduras",
@@ -127,7 +127,7 @@ const productos = [
     {
         id: "Pepino",
         titulo: "Pepino",
-        imagen: "../imagenes/verduras/pepino.jpg",
+        imagen: "./imagenes/verduras/pepino.jpg",
         categoria: {
             nombre: "verduras",
             id: "verduras",
@@ -137,7 +137,7 @@ const productos = [
     {
         id: "Portobello",
         titulo: "Portobello",
-        imagen: "../imagenes/verduras/portobello.jpg",
+        imagen: "./imagenes/verduras/portobello.jpg",
         categoria: {
             nombre: "verduras",
             id: "verduras",
@@ -147,7 +147,7 @@ const productos = [
     {
         id: "Zapallito",
         titulo: "Zapallito",
-        imagen: "../imagenes/verduras/zapallito.jpg",
+        imagen: "./imagenes/verduras/zapallito.jpg",
         categoria: {
             nombre: "verduras",
             id: "verduras",
@@ -157,7 +157,7 @@ const productos = [
     {
         id: "Zapallo",
         titulo: "Zapallo",
-        imagen: "../imagenes/verduras/zapallo.jpg",
+        imagen: "./imagenes/verduras/zapallo.jpg",
         categoria: {
             nombre: "verduras",
             id: "verduras",
