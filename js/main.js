@@ -10,7 +10,7 @@ const ConProdVacio = document.querySelector("#productos-vacio");
 async function DBProductos() {
     
     const baseproductos = await 
-    fetch("../DB/frutasYverduras.json")
+    fetch("/DB/frutasYverduras.json")
     .then((response) => {
         if(response.ok){
             return response.json();
