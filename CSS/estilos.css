@@ -158,6 +158,20 @@ body section div p {
   margin-bottom: 0px;
 }
 
+.disabled {
+  display: none;
+}
+
+.productos-vacio {
+  gap: 20px;
+}
+.productos-vacio img {
+  border-radius: 10px;
+}
+.productos-vacio p {
+  color: #ce2222;
+}
+
 .active-carrito {
   border: none;
   background-color: rgba(177, 175, 175, 0.6588235294);
@@ -290,6 +304,16 @@ body section div p {
 
 .disabled {
   display: none;
+}
+
+.monto-cuota {
+  color: #138836;
+  font-weight: bold;
+}
+
+.total-cuota {
+  color: #ce2222;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=estilos.css.map */

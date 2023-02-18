@@ -134,3 +134,13 @@
 .disabled{
     display: none;
 }
+
+.monto-cuota{
+    color: variables.$color6;
+    font-weight: bold;
+}
+
+.total-cuota{
+    color: variables.$color8;
+    font-weight: bold;
+}

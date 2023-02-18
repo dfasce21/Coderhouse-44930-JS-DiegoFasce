@@ -190,4 +190,16 @@ body {
     }
 }
 
+.disabled{
+    display: none;
+}
 
+.productos-vacio{
+    gap: 20px;
+    img{
+        border-radius: 10px;
+    }
+    p{
+        color: variables.$color8;
+    }
+}

@@ -1,0 +1,162 @@
+[
+    {
+        "id": "Anana",
+        "titulo": "Ananá",
+        "imagen": "./imagenes/frutas/anana.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "frutas"
+        },
+        "precio": 850
+    },
+    {
+        "id": "Cereza",
+        "titulo": "Cereza",
+        "imagen": "./imagenes/frutas/cereza.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "frutas"
+        },
+        "precio": 720
+    },
+    {
+        "id": "Ciruela",
+        "titulo": "Ciruela",
+        "imagen": "./imagenes/frutas/ciruela.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "frutas"
+        },
+        "precio": 540
+    },
+    {
+        "id": "Durazno",
+        "titulo": "Durazno",
+        "imagen": "./imagenes/frutas/durazno.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "frutas"
+        },
+        "precio": 520
+    },
+    {
+        "id": "Kiwi",
+        "titulo": "Kiwi",
+        "imagen": "./imagenes/frutas/kiwi.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "frutas"
+        },
+        "precio": 780
+    },
+    {
+        "id": "Limon",
+        "titulo": "Limon",
+        "imagen": "./imagenes/frutas/limon.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "frutas"
+        },
+        "precio": 340
+    },
+    {
+        "id": "Naranja",
+        "titulo": "Naranja",
+        "imagen": "./imagenes/frutas/naranja.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "frutas"
+        },
+        "precio": 330
+    },
+    {
+        "id": "Sandia",
+        "titulo": "Sandia",
+        "imagen": "./imagenes/frutas/sandia.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "frutas"
+        },
+        "precio": 780
+    },
+    {
+        "id": "Berenjena",
+        "titulo": "Berenjena",
+        "imagen": "./imagenes/verduras/berenjena.jpg",
+        "categoria": {
+            "nombre": "verduras",
+            "id": "verduras"
+        },
+        "precio": 250
+    },
+    {
+        "id": "Choclo",
+        "titulo": "Choclo",
+        "imagen": "./imagenes/verduras/choclo.jpg",
+        "categoria": {
+            "nombre": "verduras",
+            "id": "verduras"
+        },
+        "precio": 360
+    },
+    {
+        "id": "Morrones",
+        "titulo": "Morrones",
+        "imagen": "./imagenes/verduras/morrones.jpg",
+        "categoria": {
+            "nombre": "verduras",
+            "id": "verduras"
+        },
+        "precio": 390
+    },
+    {
+        "id": "Papa",
+        "titulo": "Papa",
+        "imagen": "./imagenes/verduras/papa.jpg",
+        "categoria": {
+            "nombre": "verduras",
+            "id": "verduras"
+        },
+        "precio": 320
+    },
+    {
+        "id": "Pepino",
+        "titulo": "Pepino",
+        "imagen": "./imagenes/verduras/pepino.jpg",
+        "categoria": {
+            "nombre": "verduras",
+            "id": "verduras"
+        },
+        "precio": 210
+    },
+    {
+        "id": "Portobello",
+        "titulo": "Portobello",
+        "imagen": "./imagenes/verduras/portobello.jpg",
+        "categoria": {
+            "nombre": "verduras",
+            "id": "verduras"
+        },
+        "precio": 1100
+    },
+    {
+        "id": "Zapallito",
+        "titulo": "Zapallito",
+        "imagen": "./imagenes/verduras/zapallito.jpg",
+        "categoria": {
+            "nombre": "verduras",
+            "id": "verduras"
+        },
+        "precio": 420
+    },
+    {
+        "id": "Zapallo",
+        "titulo": "Zapallo",
+        "imagen": "./imagenes/verduras/zapallo.jpg",
+        "categoria": {
+            "nombre": "verduras",
+            "id": "verduras"
+        },
+        "precio": 420
+    }
+]

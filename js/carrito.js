@@ -1,5 +1,12 @@
 
-let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito"));
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito")
+
+if(productosEnCarritoLS){
+    productosEnCarrito = JSON.parse(productosEnCarritoLS);
+}
+else{
+    productosEnCarrito = [];
+}
 
 const contenedorCarrito = document.querySelector(".div-productos-carrito");
 const carritoVacio = document.querySelector("#carrito-vacio");
@@ -8,6 +15,7 @@ const numeritoCarrito = document.querySelector("#numerito");
 const totalCarrito = document.querySelector("#total");
 let botonesEliminar = document.querySelector(".botones-eliminar");
 const botonVaciar = document.querySelector("#vaciar-carrito");
+const botonCompra = document.querySelector("#boton-comprar");
 
 function cargarProductosAlCarrito() {
 
@@ -33,7 +41,9 @@ function cargarProductosAlCarrito() {
         
                 contenedorCarrito.append(div);
             })
-            actualizarNumerito();
+
+        actualizarNumerito();
+
     }
     else{
         carritoVacio.classList.remove("disabled");
@@ -54,6 +64,7 @@ function actualizarNumerito() {
 
     let total = productosEnCarrito.reduce((acc, producto) => acc + producto.precio*producto.cant, 0);
     totalCarrito.innerText = "Total a pagar: $ " + total;
+
 }
 
 function actualizarBotonesEliminar() {
@@ -83,4 +94,28 @@ function vaciarElCarrito() {
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
     cargarProductosAlCarrito();
+}
+
+botonCompra.addEventListener("click", alertaCompra); 
+function alertaCompra() {
+   
+    Swal.fire({
+        title: '¿Seguro desea realizar la compra?',
+        text: "seleccione una opcion",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Comprar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Compra Exitosa',
+                text: 'La compra se realizó con exito',
+              })
+              
+        vaciarElCarrito();
+        }
+    })
 }
