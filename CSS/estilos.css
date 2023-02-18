@@ -242,6 +242,17 @@ body section div p {
   flex-direction: column;
   align-items: flex-start;
 }
+.div-productos-carrito div div .mas-menos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+}
+.div-productos-carrito div div .mas-menos i:hover {
+  color: #138836;
+  cursor: pointer;
+}
 .div-productos-carrito div div p {
   padding: 0px;
 }

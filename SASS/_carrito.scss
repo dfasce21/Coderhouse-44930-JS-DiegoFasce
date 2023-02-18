@@ -68,10 +68,25 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            .mas-menos{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 10px;
+                i{
+                    &:hover{
+                        color: variables.$color6;
+                        cursor: pointer; 
+                    }
+                }
+
+            }
             p{
                 padding: 0px;
             }
         }
+
         button{
             border: none;
             position: relative;
@@ -144,3 +159,4 @@
     color: variables.$color8;
     font-weight: bold;
 }
+

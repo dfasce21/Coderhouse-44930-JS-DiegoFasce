@@ -33,7 +33,7 @@ function cargarProductosAlCarrito() {
                 div.innerHTML = `
                     <img src=".${producto.imagen}" alt="${producto.titulo}">
                     <div><small>Nombre</small><p>${producto.titulo}</p></div>
-                    <div><small>Cantidad</small><p>${producto.cant}</p></div>
+                    <div><small>Cantidad</small><div class="mas-menos"><i class="bi bi-dash-square-fill boton-menos" id="${producto.id}"></i><p>${producto.cant}</p><i class="bi bi-plus-square-fill boton-mas" id="${producto.id}"></i></div></div>
                     <div><small>Precio</small><p>$ ${producto.precio}</p></div>
                     <div><small>Subtotal</small><p>$ ${(producto.cant)*(producto.precio)}</p></div>
                     <button id="${producto.id}" class="botones-eliminar"><i class="bi bi-trash-fill"></i></button>
@@ -53,6 +53,9 @@ function cargarProductosAlCarrito() {
     }
 
     actualizarBotonesEliminar();
+    actualizarBotonesSumar();
+    actualizarBotonesRestar();
+
 }
 cargarProductosAlCarrito();
 
@@ -80,6 +83,50 @@ function eliminarDelCarrito(e) {
     const idBoton = e.currentTarget.id;
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
     productosEnCarrito.splice(index, 1);
+
+    cargarProductosAlCarrito();
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+}
+
+function actualizarBotonesSumar() {
+    botonesSumar = document.querySelectorAll(".boton-mas");
+
+    botonesSumar.forEach(boton => {
+        boton.addEventListener("click", SumarItem);
+    });
+}
+
+function SumarItem(e) {
+
+    const idBoton = e.currentTarget.id;
+    const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+    productosEnCarrito[index].cant++;
+
+    cargarProductosAlCarrito();
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+}
+
+function actualizarBotonesRestar() {
+    botonesSumar = document.querySelectorAll(".boton-menos");
+
+    botonesSumar.forEach(boton => {
+        boton.addEventListener("click", RestarItem);
+    });
+}
+
+function RestarItem(e) {
+
+    const idBoton = e.currentTarget.id;
+    const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+
+    if(productosEnCarrito[index].cant!==1){
+        productosEnCarrito[index].cant--;
+    }
+    else{
+        productosEnCarrito[index].cant = 1;
+    }
 
     cargarProductosAlCarrito();
 
@@ -119,3 +166,5 @@ function alertaCompra() {
         }
     })
 }
+
+
